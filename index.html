@@ -54,21 +54,28 @@
             </div>
           </nav>
 
-          <div class="container-fluid text-center" style="margin-top: 5.65%; background-color: rgb(26, 188, 156); padding-top: 10%; padding-bottom: 7em;">
-                <div class="row">
-                <div> <img src="avataaars.svg" class="img-fluid" style="max-width: 250px" alt=""></div>
-                <div><h1 class="text-uppercase fw-bold text-white">Start bootstrap</h1></div>
-                <div class="divider-line" style="display: flex; width: 100%; align-items: center; justify-content: center;">
-                  <div class="line-one rounded" style="width: 100%; max-width: 5em; height: 0.2em; background-color: white;"></div> 
-                  <div class="divider-line-icon" style="font-size: 2em; margin: 0.3em;"><i class="fas fa-star text-white"></i></div>
-                <div class="line-two rounded" style="width: 100%; max-width: 5em; height: 0.2em; background-color: white;"></div></div>
-                <div><h4 class="text-white">Graphic Artist - Web Designer - Illustrator</h4></div>
+          <header class="masthead text-white text-center" style="background-color: rgb(26, 188, 156);">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5 img-fluid" src="avataaars.svg" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
                 </div>
-          </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+            </div>
+        </header>
 
-          <section class="container text-center" id="myportfolio" style="margin-top: 4em; padding-top: 5em;">
+         
+
+          <section class="container text-center page-section myportfolio" id="myportfolio">
                   <div class="row">
-                    <div><h1 class="text-uppercase fw-bold">Portfolio</h1></div>
+                    <div><h1 class="text-uppercase page-section-heading ">Portfolio</h1></div>
                 <div class="divider-line" style="display: flex; width: 100%; align-items: center; justify-content: center;">
                   <div class="line-one" style="width: 100%; max-width: 5em; height: 0.2em; background-color: black;"></div> 
                   <div class="divider-line-icon" style="font-size: 2em; margin: 0.3em;"><i class="fas fa-star"></i></div>
@@ -76,15 +83,15 @@
                   </div>
                 <div class="row justify-content-center">
 
-                  <div class="col-4 mb-2">
-                    <div class="position-relative " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class=" cover-img h-100 w-100 rounded img d-flex align-items-center justify-content-center text-white">
                       <i class="fas fa-plus fa-5x"></i>
                     </div>
                     <img src="/portfolio/cabin.png" alt="" class="img-fluid rounded">
                   </div>
                   </div>
-                  <div class="col-4 mb-2" >
+                  <div class="col-md-6 col-lg-4 mb-5" >
                     <div class="position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                       <div class="cover-img h-100 w-100 rounded img d-flex align-items-center justify-content-center text-white">
                         <i class="fas fa-plus fa-5x"></i>
@@ -93,7 +100,7 @@
                     </div>
                       
                   </div>
-                  <div class="col-4 mb-2" >
+                  <div class="col-md-6 col-lg-4 mb-5" >
                     <div class="position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                       <div class="cover-img h-100 w-100 rounded img d-flex align-items-center justify-content-center text-white">
                         <i class="fas fa-plus fa-5x"></i>
@@ -101,7 +108,7 @@
                       <img src="/portfolio/circus.png" alt="" class="img-fluid rounded">
                     </div>
                   </div>
-                  <div class="col-4 mb-2" >
+                  <div class="col-md-6 col-lg-4 mb-5" >
                     <div class="position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                       <div class="cover-img h-100 w-100 rounded img d-flex align-items-center justify-content-center text-white">
                         <i class="fas fa-plus fa-5x"></i>
@@ -109,7 +116,7 @@
                       <img src="/portfolio/game.png" alt="" class="img-fluid rounded">
                     </div>
                   </div>
-                  <div class="col-4 mb-2" >
+                  <div class="col-md-6 col-lg-4 mb-5" >
                     <div class="position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                       <div class="cover-img h-100 w-100 rounded img d-flex align-items-center justify-content-center text-white">
                         <i class="fas fa-plus fa-5x"></i>
@@ -117,7 +124,7 @@
                       <img src="/portfolio/safe.png" alt="" class="img-fluid rounded">
                     </div>
                   </div>
-                  <div class="col-4 mb-2" >
+                  <div class="col-md-6 col-lg-4 mb-5" >
                     <div class="position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal5">
                       <div class="cover-img h-100 w-100 rounded img d-flex align-items-center justify-content-center text-white">
                         <i class="fas fa-plus fa-5x"></i>
@@ -126,7 +133,7 @@
                     </div>
                   </div>
                 </div>
-                </section>
+          </section>
 
                   <div class="modal" tabindex="-1" id="exampleModal">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -284,11 +291,11 @@
                     </div>
                   </div>    
 
-                  <section class="container text-center" id="about" style="padding-top: 3.5em;">
-                    <div class="container-fluid text-center" style="background-color: rgb(26, 188, 156); padding-top: 5em; margin-top: 5em;">
+                  <section class="container-fluid text-center page-section about" id="about" style="background-color: rgb(26, 188, 156);">
+                    
                       <div class="row">
                         
-                        <div><h1 class="text-uppercase fw-bold text-white">About</h1></div>
+                        <div><h1 class="text-uppercase text-white page-section-heading">About</h1></div>
                         <div class="divider-line" style="display: flex; width: 100%; align-items: center; justify-content: center;">
                           <div class="line-one rounded" style="width: 100%; max-width: 5em; height: 0.2em; background-color: white;"></div> 
                           <div class="divider-line-icon" style="font-size: 2em; margin: 0.3em;"><i class="fas fa-star text-white"></i></div>
@@ -296,25 +303,25 @@
                         
                         </div>
   
-                        <div class="row d-flex justify-content-center text-white" >
-                          <div class="col-4 m-2" style="width: 540px; height: 200px; text-align: left;">
-                          <h4>
+                        <div class="row text-white aboutrow" >
+                          <div class="col-lg-4 ms-auto">
+                          <p class="lead">
                             Freelancer is a free bootstarp theme created by Start Bootstrap. The download includes
                             the complete source files including HTML, CSS and Javascript as well as optional SASS stylesheets
                             for easy customization.
-                          </h4>
+                          </p>
                         </div>
-                        <div class="col-4 m-2" style="width: 540px; height: 200px; text-align: left;">
-                            <h4>
+                        <div class="col-lg-4 me-auto">
+                            <p class="lead">
                               You can create your own custom avatar for the masthead, change the icon in the dividers, 
                               and add your email to the contact form to make it fully functional!
   
-                            </h4>
+                            </hp>
                         </div>
   
                         </div>
   
-                        <div class="row d-flex justify-content-center text-white" style="padding-bottom: 5em;">
+                        <div class="row d-flex justify-content-center text-white" style="padding-bottom: 2em;">
   
                             <div class="downloadbtn d-flex justify-content-center align-items-center" style="width: 280px; height: 75px; border: solid white; border-radius: 2cap;">
   
@@ -325,16 +332,12 @@
   
                         </div>
   
-                    </div>
 
                   </section>
-                    
-                                  
 
-                  <div class="container-fluid text-center" id="contactme" style="padding-top: 5.7em; padding-bottom: 5em;">
-
+                  <section class="container-fluid text-center page-section contactme" id="contactme">
                     <div class="row" style="padding-bottom: 3em;">
-                      <div><h1 class="text-uppercase fw-bold">Contact Me</h1></div>
+                      <div><h1 class="text-uppercase page-section-heading">Contact Me</h1></div>
                   <div class="divider-line" style="display: flex; width: 100%; align-items: center; justify-content: center;">
                     <div class="line-one" style="width: 100%; max-width: 5em; height: 0.2em; background-color: black;"></div> 
                     <div class="divider-line-icon" style="font-size: 2em; margin: 0.3em;"><i class="fas fa-star"></i></div>
@@ -394,8 +397,8 @@
 
                   </div>
 
-
-                  </div>
+                  </section>
+        
 
                  <footer class="footer text-center text-white mt-5 footer-bg" style="padding-top: 4em; padding-bottom: 4em;">
                   <div class="container">
